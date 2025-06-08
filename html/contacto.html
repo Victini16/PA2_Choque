@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - GEI</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
     <header>
         <h1>Contacto</h1>
@@ -20,7 +22,7 @@
         <section>
             <h2>Contáctanos</h2>
             <p>¿Tienes preguntas o comentarios sobre los gases de efecto invernadero?</p>
-            
+
             <form id="contactForm">
                 <div class="form-group">
                     <label for="nombre">Nombre completo:</label>
@@ -75,11 +77,12 @@
     </footer>
 
     <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault();
             document.getElementById('confirmation').classList.remove('hidden');
             this.reset();
         });
     </script>
 </body>
+
 </html>
