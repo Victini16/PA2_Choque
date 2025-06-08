@@ -1,0 +1,225 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos de secciones */
+section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Imágenes responsivas */
+picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Mapa interactivo */
+figure {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #666;
+}
+
+/* Tabla estilizada */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table thead {
+    background-color: #e8f5e9;
+}
+
+table th, table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Formulario */
+form {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#confirmation {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    color: #2e7d32;
+    border-radius: 4px;
+    display: none;
+}
+
+/* SVG animado */
+@keyframes sun-ray {
+    0% { transform: translateY(-100px) translateX(-50px) scale(0.8); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(0) translateX(0) scale(1); opacity: 0; }
+}
+
+@keyframes heat-escape {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-250px) scale(1.2); opacity: 0; }
+}
+
+@keyframes heat-trap {
+    0% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(-80px); opacity: 1; }
+    100% { transform: translateY(0px) scaleX(-1); opacity: 0; }
+}
+
+@keyframes gas-wander-1 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(20px, -15px); }
+    50% { transform: translate(-10px, 10px); }
+    75% { transform: translate(15px, 20px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes gas-wander-2 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-15px, 25px); }
+    50% { transform: translate(10px, -5px); }
+    75% { transform: translate(-20px, -15px); }
+    100% { transform: translate(0, 0); }
+}
+
+.sun-ray-1 { animation: sun-ray 3s linear infinite; }
+.sun-ray-2 { animation: sun-ray 3s linear infinite 1s; }
+
+.heat-ray-escape-1 { animation: heat-escape 4s linear infinite 0.5s; }
+.heat-ray-escape-2 { animation: heat-escape 4s linear infinite 2.5s; }
+
+.heat-ray-trap-1 { animation: heat-trap 4.5s linear infinite 1.5s; }
+.heat-ray-trap-2 { animation: heat-trap 4.5s linear infinite 3.5s; }
+
+.gas-molecule.m1 { animation: gas-wander-1 15s linear infinite; }
+.gas-molecule.m2 { animation: gas-wander-2 18s linear infinite; }
+.gas-molecule.m3 { animation: gas-wander-1 16s linear infinite 3s; }
+.gas-molecule.m4 { animation: gas-wander-2 14s linear infinite 2s; }
+
+/* Footer */
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+}
